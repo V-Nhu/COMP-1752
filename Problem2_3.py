@@ -52,27 +52,27 @@ class Project:
 # Problem 3
 class SchoolSystem:
     def __init__(self):
-        self.students = []  # Danh sách sinh viên
-        self.lecturers = []  # Danh sách giảng viên
-        self.projects = []  # Danh sách dự án
+        self.students = []  
+        self.lecturers = []  
+        self.projects = []  
 
     def add_student(self, student: Student):
         if len(self.students) < 10:
             self.students.append(student)
             return True
-        return False  # Không thể thêm nếu danh sách đã đầy
+        return False  
 
     def add_lecturer(self, lecturer: Lecturer):
         if len(self.lecturers) < 10:
             self.lecturers.append(lecturer)
             return True
-        return False  # Không thể thêm nếu danh sách đã đầy
+        return False  
 
     def add_project(self, project: Project):
         if len(self.projects) < 10:
             self.projects.append(project)
             return True
-        return False  # Không thể thêm nếu danh sách đã đầy
+        return False  
 
     def display_students(self):
         print("Students List:")
